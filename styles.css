@@ -1,0 +1,108 @@
+@font-face { font-family: brush; src: url('Brushfiber.otf'); } 
+@font-face { font-family: newton; src: url('neutoncursive-regular.ttf'); } 
+@font-face { font-family: draco; src: url('draco.ttf'); } 
+h1,a, h2,h3 {font-family: brush, sans-serif;}
+p, body, h4,h5,h6,.w3-wide {font-family: newton, sans-serif;}
+.draco{font-family:draco, sans-serif;}
+
+#header{
+    text-align: center;
+    margin-top:-1em;
+}
+p{
+    font-size:1.5em;
+}
+h1, h2{
+    font-size: 5vw;
+    background: linear-gradient(to right, #000000, #e98ff4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    height:6vw;
+}
+#navbar{
+  text-align: center;
+}
+#navbar ul{
+  display: inline-block;
+    list-style-type: none;
+    margin: 0    overflow: hidden;
+    margin-top:-20px;
+    margin-bottom:0px;
+}
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+    padding-left:80px;
+    padding-right:80px;
+    color:#3D3D3D;
+    font-size:1.5em;
+}
+
+li a:hover {
+    color: #696868;
+}
+#picture{
+    height:450px;
+  
+}
+
+blockquote{
+    margin:0;
+    padding-left:30px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+h2{
+     background: linear-gradient(to right, #b139b2, #e98ff4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:2.5em;
+    margin-bottom: -50px;
+}
+h3{
+    font-size:1.25em;
+}
+
+#footer{
+    border-top:1px solid #000000;
+    text-align: center;
+}
+#podium{
+    width:500px;
+    margin-left:50px;
+
+}
+#demo{
+    font-size:4em;
+}
+
+#eventsimg{
+    height:300px;
+    vertical-align: middle;
+    text-align: center;
+    padding-top:6%;
+}
+#recruitment{
+    text-align:center;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+    border-radius: 12px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:20px;
+}
