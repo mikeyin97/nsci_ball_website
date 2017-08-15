@@ -18,69 +18,145 @@
         <script src="js/jquery.plugin.js"></script>
         <script src="js/jquery.countdown.js"></script>
     </head>
-    <body>
+    <body id = "main">
+        <div id = "loader"></div>
+        <div id = "header" class = "col-xs-4 col-xs-offset-8"> <div id = "balldiv"><img id = "ball" src = "ball2.png" height = "500px"></div></div>
 
 
-        <div id = "header" class="col-xs-12">
-            <h1><span class = "style1">Engineering Science Basketball Team</span></h1>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Members</a>
+            <a href="#">Register</a>
+            <a href="#">Contact</a>
         </div>
-
-
-        <div id = "navbar" class="col-xs-12" >
-            <ul>
-                <li><a class="active" href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </div>
-
-
-        <div id = "picture" class = "col-xs-12">
-            <center><img src="images/basketball.gif" align = "middle" id = "mainpic"></center>
-        </div>
-        <div id = "missionimg" class="col-xs-1"></div>
-        <div id = "missionimg" class="col-xs-5">
-            <img src="podium2.gif" align = "middle" id = "podium">
-        </div>
-
-        <div id = "mission" class="col-xs-4">
-            <h2>Our Mission</h2>
-            <p>At the EngSci Ball Team we are dedicated to being the best Lorem ipsum dolor sit amet, nulla maiorum invidunt vix id. Pri at minim melius, in sit simul accommodare. No omnium tractatos dissentiet est, ne vix quod novum lobortis. Eu cum solum mollis graecis, his simul omnium ponderum at.</p>
-            <blockquote><h3> "We will be the best"</h3></blockquote>
-
-            <p>In eam tota ullum qualisque, cu sea minim audire. Eros vitae copiosae ex vim, an possit molestie sed, inermis hendrerit usu an. Nec enim impedit an, duo eu omnium elaboraret. Quo exerci dicunt no.
-
-                Labore nominati ei cum, civibus volutpat posidonium his et, mel commune consequat philosophia te. Nam stet luptatum gloriatur ut, mei et tale platonem. Id duo hinc malorum inciderint, nam ex aliquam invidunt. Vim albucius euripidis et, elit h</p>
-        </div>
-
-        <div id = "events" class="col-xs-5 col-xs-offset-2">
-            <h2>Upcoming Events</h2>
-            <p>At the EngSci Ball Team we are dedicated to being the best Lorem ipsum dolor sit amet, nulla maiorum invidunt vix id. Pri at minim melius, in sit simul accommodare. No omnium tractatos dissentiet est, ne vix quod novum lobortis. Eu cum solum mollis graecis, his simul omnium ponderum at.
-            copiosae ex vim, an possit molestie sed, inermis hendrerit usu an. Nec enim impedit an, duo eu omnium elaboraret. Quo exerci dicunt no.
-
-                Labore nominati ei cum, civibus volutpat posidonium his et, mel commune consequat philosophia te. Nam stet luptatum gloriatur ut, mei et tale platonem. Id duo hinc malorum inciderint, nam ex aliquam invidunt. Vim albucius euripidis et, elit h</p>
-        </div>
-        <div id = "eventsimg" class="col-xs-5">
-            <p>Next Game in:</p>
-            <p id="demo"></p>
-
-            
-        </div>
-
-
         
-        <div id = "recruitment" class="col-xs-4 col-xs-offset-4">
+        
+        <div id = "icon" class = "col-xs-offset-1 col-xs-1">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div id = "title" class = "col-xs-5 col-xs-offset-1"><h1>Engineering Science Basketball Team</h1></div>
+        <div class = "col-xs-6">
+        <img id = "logo" src = "logo.png"></div>
+
+        <div id = "motto" class = "col-xs-3"><h6>Integrity, Drive, Determination, Success</h6></div>
+        <div id = "swirl" class = "col-xs-2">
+            <div id = "block1"></div>
+            <img id = "plays" src = "xandos.png">
+            <img id = "x" src = "x.png"></div>
+
+        <div id = "integrity" class = "col-xs-5 col-xs-offset-1 "><h2><br />Integrity</h2>
+            <div class = "line"><p>At the Engineering Science Basketball Team, we </p></div>
+            <div class = "line"><p>&nbsp;</p></div>
+            <div class = "line"><p>value the importance of morality - of being responsible, </p>
+            </div>
+            <div class = "line"><p>&nbsp;</p></div>
+            <div class = "line"><p>punctual, and respectul towards your teammates.</p>
+            </div>
+        </div>
+
+        <div id = "court" class = "col-xs-12 col-xs-offset-">
+            <div id = "success" class = "col-xs-3 col-xs-offset-1 hideme2">
+                <h3>Success</h3>
+                <div class = "line2"><p>The Engineering Science Ball Team has a </p></div>
+                <div class = "line2"><p>&nbsp;</p></div>
+                <div class = "line2"><p>rich history of success, placing highly in </p>
+                </div>
+                <div class = "line2"><p>&nbsp;</p></div>
+                <div class = "line2"><p>many interschool competitions. </p>
+                </div>
+            </div>
+            <div id = "podiumgif" class = "col-xs-5 col-xs-offset-1 hideme2">
+                <img id = "podium" src = "podium2.gif">
+            </div>
+
+
+        </div>
+
+        <div id = "countdown" class = "col-xs-4 col-xs-offset-1 hideme"><p id = "countdown"><p>Next Game in:</p><p id="demo"></p></div>
+
+
+        <div id = "events" class = "col-xs-5 col-xs-offset-1 hideme"><h2><br/><br />Upcoming Events</h2>
+            <table>
+                <tr>
+                    <th>Opponent</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>shitterA</td>
+                    <td>Aug10</td>
+                    <td>4:20pm</td>
+                    <td>Bahen</td>
+                </tr>
+                <tr>
+                    <td>shitterA</td>
+                    <td>Aug10</td>
+                    <td>4:20pm</td>
+                    <td>Bahen</td>
+                </tr>
+                <tr>
+                    <td>shitterA</td>
+                    <td>Aug10</td>
+                    <td>4:20pm</td>
+                    <td>Bahen</td>
+                </tr>
+                <tr>
+                    <td>shitterA</td>
+                    <td>Aug10</td>
+                    <td>4:20pm</td>
+                    <td>Bahen</td>
+                </tr>
+                <tr>
+                    <td>shitterA</td>
+                    <td>Aug10</td>
+                    <td>4:20pm</td>
+                    <td>Bahen</td>
+                </tr>
+                <tr>
+                    <td>shitterA</td>
+                    <td>Aug10</td>
+                    <td>4:20pm</td>
+                    <td>Bahen</td>
+                </tr>
+            </table>
+            <div id= "block3"></div>
+            <div id= "block4"></div>
+        </div>
+
+
+        <div id = "recruitment" class="hideme3 col-xs-3 col-xs-offset-2">
             <h2>Join Today!</h2>
+            <p> Recruitment is open. Be part of a glorious club!<br/>
+                <br/></p>
+
+
+        </div>
+        <div id = "recruitment2" class="hideme3 col-xs-4 col-xs-offset-1">
+
             <button>Click Here to Sign Up</button>
-            <p> Recruitment is open. Be part of a glorious club!</p>
+
         </div>
 
 
 
-
-        <div id = "footer" class="col-xs-12">
-            <h3>Copyright, Address, Contact, Motto, Youtube, Facebook</h3>
+        <div id = "footer" class="hideme col-xs-12">
+            
+                <p>
+                &copy; Copyright 2017.
+            <br/> Website design by Mike Yin</p>
         </div>
+
     </body>
 </html>

@@ -1,101 +1,272 @@
-@font-face { font-family: brush; src: url('Brushfiber.otf'); } 
-@font-face { font-family: newton; src: url('neutoncursive-regular.ttf'); } 
-@font-face { font-family: draco; src: url('draco.ttf'); } 
-h1,a, h2,h3 {font-family: brush, sans-serif;}
-p, body, h4,h5,h6,.w3-wide {font-family: newton, sans-serif;}
-.draco{font-family:draco, sans-serif;}
+@font-face { font-family: mlight; src: url('mlight.otf'); } 
+@font-face { font-family: montxbold; src: url('mxbold.otf'); } 
+@font-face { font-family: montbold; src: url('mbold.otf'); }
+html {
+    overflow-x: hidden;
+}
 
-#header{
-    text-align: center;
-    margin-top:-1em;
+body {
+    font-family: mlight, sans-serif;
+    background-color: #0500a3;
+    color:white;
+}
+h1{
+    font-family:montxbold, sans-serif;
+    font-size:3.5em;
+}
+h2{
+    font-family:montbold, sans-serif;
+    font-size:2.5em;
+    color:#eeff96;
+}
+h3{
+    font-family:montbold, sans-serif;
+    font-size:2.5em;
+    color:#49340b;
+    position:relative;
+    margin-top:1em;
+    left:2em;
+    margin-bottom:1em;
+}
+#integrity{
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#title, #icon{
+    -webkit-animation: fadeInRight 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    clear:both;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight2 {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 0.8;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+#motto{
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    clear:both;
+    border-right:5px solid #FFAA7C;
+}
+
+#block1{
+    height:5px;
+    background-color:#f6ff67;
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#balldiv{
+    margin-top:00px;
+    margin-bottom:-400px;
+}
+#ball{
+    position:relative;
+    right:-00px;
+    -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
+    -ms-animation: fadeInLeft 2s; /* Internet Explorer */
+    -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
+    animation: fadeInLeft 2s;
+}
+
+.hideme
+{
+    opacity:0;
+}
+.hideme2
+{
+    opacity:0;
+}
+.hideme3
+{
+    opacity:0;
+}
+@keyframes fadein1 {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+#recruitment{
+    height:175px;
+
+}
+#recruitment2{
+    height:175px;
+  
+}
+h6 {
+    transform: rotate(270deg);
+    transform-origin: bottom right 0;
+    width:20em;
+    font-size: 1.25em;
+    margin-left:-8em;
+    color:#f6ff67;
+}
+.line{
+    border-bottom: 1px solid currentColor; /* Or whatever color you want */
+    padding:2px;
+    padding-top:10px;
+}
+.line2{
+    border-bottom: 1px solid currentColor; /* Or whatever color you want */
+    padding:2px;
+    padding-top:10px;
+    color:black;
 }
 p{
     font-size:1.5em;
 }
-h1, h2{
-    font-size: 5vw;
-    background: linear-gradient(to right, #000000, #e98ff4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    height:6vw;
+
+#plays{
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position:absolute;
+    opacity: 0.5;
+    -webkit-transform: rotate(-7deg);
+    height:20em;
+    top: 10em;
+    left:-5em;
 }
-#navbar{
-  text-align: center;
+
+#x{
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position:absolute;
+    opacity: 0.9;
+    -webkit-transform: rotate(-7deg);
+    height:6em;
+    top: 26em;
+    left:13em;
+    animation-name: playset;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+    -moz-animation-fill-mode:forwards; /*FF 5+*/
+    -o-animation-fill-mode:forwards; /*Not implemented yet*/
+    -ms-animation-fill-mode:forwards; /*IE 10+*/
+    animation-fill-mode:forwards; /*when the spec is finished*/
 }
-#navbar ul{
-  display: inline-block;
-    list-style-type: none;
-    margin: 0    overflow: hidden;
-    margin-top:-20px;
-    margin-bottom:0px;
+
+@keyframes playset {
+    0% { opacity: 0; }
+    30%   { opacity: 0.9; }
+    40%   { top: 26em;
+        left:13em;}
+    100% { top: 8em;
+        left:18em;}
 }
 
 
-li {
-    float: left;
+#swirl{
+    height:38em;
 }
 
-li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    margin: 0px;
-    padding-left:80px;
-    padding-right:80px;
-    color:#3D3D3D;
-    font-size:1.5em;
+
+#court {
+    top:-80px;
+    color: #fff;
+    background-image: url("courttext.jpg");
+    opacity: 0.8; filter: alpha(opacity=20);
+    -webkit-filter: brightness(0.99);
+    filter: brightness(1.2);
+    color: rgba(20,  122,  188,  0.5);
+    padding: 6px 0 12px;
+    height: 30em;
+    width:150em;
+    left:-10px;
+    transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);-webkit-transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);-moz-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);-o-transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);-ms-transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);
+    margin-bottom:-80px;
+    margin-left:-100px;
 }
 
-li a:hover {
-    color: #696868;
-}
-#picture{
-    height:450px;
-  
+#podiumgif{
+    transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);-webkit-transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);-moz-transform: rotate(2deg) scale(1) skew(0deg) translate(0px);-o-transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);-ms-transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);
 }
 
-blockquote{
-    margin:0;
-    padding-left:30px;
-    padding-top:0px;
-    padding-bottom:0px;
-}
-h2{
-     background: linear-gradient(to right, #b139b2, #e98ff4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size:2.5em;
-    margin-bottom: -50px;
-}
-h3{
-    font-size:1.25em;
-}
-
-#footer{
-    border-top:1px solid #000000;
-    text-align: center;
-}
 #podium{
-    width:500px;
-    margin-left:50px;
-
-}
-#demo{
-    font-size:4em;
+    position:relative;
+    height:50em;
+    left:-10em;
+    top:-5em;
 }
 
-#eventsimg{
-    height:300px;
-    vertical-align: middle;
-    text-align: center;
-    padding-top:6%;
+#block3{
+    height:5px;
+    width:150px;
+    background-color:#ff6b6b;
+    position:relative;
+    left:37.4em;
+    top:2em;
 }
-#recruitment{
+#block4{
+    height:150px;
+    width:5px;
+    background-color:#ff6b6b;
+    position:relative;
+    left:48em;
+    top:-8.7em;
+    margin-bottom:-100px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+td, th {
+    text-align: left;
+    padding: 10px;
+    font-size:1.2em;
+}
+
+#countdown{
+    right:-50px;
+    position:relative;
+    top:15em;
     text-align:center;
 }
 
+#demo{
+    font-size:50px;
+}
+
+tr:nth-child(even) {
+    background-color: #e5e1ff;
+    color:blue;
+}
 button {
-    background-color: white;
+    background-color: #e5e1ff;
     color: black;
     border: 2px solid #008CBA;
     border-radius: 12px;
@@ -104,5 +275,87 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin:20px;
+    margin-bottom:20px;
+    margin-top:50px;
 }
+#footer{
+    background-color: black;
+
+    text-align:center;
+    width: 120%;
+    position:relative;
+    left:-10%;
+    padding-top:20px;
+    margin-top:-20px;
+}
+
+#socialmedia{
+    background-color: aliceblue;
+    clear:both;
+    text-align:center;
+    width: 120%;
+    position:relative;
+    left:-10%
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#logo{
+     -webkit-filter: brightness(1.0);
+    position:relative;
+     -webkit-animation: fadeInRight2 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    filter: brightness(1.0);
+    height:100px;
+    width:120px;
+    left:-7.5em;
+    top: 2.5em;
+}
+
+
+
