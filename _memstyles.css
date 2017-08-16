@@ -31,18 +31,7 @@ h3{
 p{
     font-size:1em;
 }
-.succ{
-    -webkit-animation: fadein1 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top:0px;
-    margin-bottom:0px;
-}
 
 .hideme
 {
@@ -55,6 +44,14 @@ table {
 .hideme3
 {
     opacity:1;
+}
+#group{
+    width:87vw;
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    margin:auto;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -94,6 +91,14 @@ table {
     {
         opacity:0;
     }
+    #group{
+    width:50vw;
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+}
+
 
 
 }
@@ -148,11 +153,13 @@ table {
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-50px); 
+        transform:rotate(0deg);
     }
     100% {
         opacity: 1;
         transform: translateX(0);
+        transform:rotate(80deg);
     }
 }
 #motto{
@@ -160,7 +167,7 @@ table {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     clear:both;
-    border-right:5px solid #FFAA7C;
+
 }
 
 #block1{
@@ -176,12 +183,18 @@ table {
 }
 #ball{
     position:relative;
-    right:-00px;
+    right:-170px;
+    top:40px;
+    -ms-transform: rotate(80deg); /* IE 9 */
+    -webkit-transform: rotate(80deg); /* Chrome, Safari, Opera */
+    transform: rotate(80deg);
     -webkit-animation: fadeInLeft 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeInLeft 2s; /* Firefox < 16 */
     -ms-animation: fadeInLeft 2s; /* Internet Explorer */
     -o-animation: fadeInLeft 2s; /* Opera < 12.1 */
     animation: fadeInLeft 2s;
+     z-index: 1;
+    height:300px;
 }
 
 
@@ -189,14 +202,7 @@ table {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
-#recruitment{
-    height:175px;
 
-}
-#recruitment2{
-    height:175px;
-
-}
 h6 {
     transform: rotate(270deg);
     transform-origin: bottom right 0;
@@ -204,80 +210,6 @@ h6 {
     font-size: 1.25em;
     margin-left:-8em;
     color:#f6ff67;
-}
-.line{
-    border-bottom: 1px solid currentColor; /* Or whatever color you want */
-    padding:2px;
-    padding-top:10px;
-}
-.line2{
-    border-bottom: 1px solid currentColor; /* Or whatever color you want */
-    padding:2px;
-    padding-top:10px;
-    color:black;
-}
-
-
-#plays{
-    -webkit-animation: fadein1 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position:absolute;
-    opacity: 0.5;
-    -webkit-transform: rotate(-7deg);
-    height:20em;
-    top: 10em;
-    left:-5em;
-}
-
-#mplays{
-    -webkit-animation: fadein1 2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position:absolute;
-    opacity: 0.5;
-    -webkit-transform: rotate(-7deg);
-    height:20em;
-    top: 0;
-    left:3em;
-}
-
-
-
-#x{
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position:absolute;
-    opacity: 0.9;
-    -webkit-transform: rotate(-7deg);
-    height:6em;
-    top: 26em;
-    left:13em;
-    animation-name: playset;
-    animation-duration: 4s;
-    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
-    -moz-animation-fill-mode:forwards; /*FF 5+*/
-    -o-animation-fill-mode:forwards; /*Not implemented yet*/
-    -ms-animation-fill-mode:forwards; /*IE 10+*/
-    animation-fill-mode:forwards; /*when the spec is finished*/
-}
-
-#mx{
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    position:absolute;
-    opacity: 0.9;
-    -webkit-transform: rotate(-7deg);
-    height:6em;
-    top: 16em;
-    left:21em;
-    animation-name: playset2;
-    animation-duration: 4s;
-    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
-    -moz-animation-fill-mode:forwards; /*FF 5+*/
-    -o-animation-fill-mode:forwards; /*Not implemented yet*/
-    -ms-animation-fill-mode:forwards; /*IE 10+*/
-    animation-fill-mode:forwards; /*when the spec is finished*/
 }
 
 @keyframes playset {
@@ -299,15 +231,7 @@ h6 {
 }
 
 
-.mbutton{
-    margin-top:-20px;
-    margin-bottom:40px;
-}
 
-
-#swirl{
-    height:18em;
-}
 
 @media screen and (min-width: 768px) {
     #swirl {
@@ -316,7 +240,7 @@ h6 {
 }
 
 #court {
-    top:-80px;
+    top:40px;
     color: #fff;
     background-image: url("courttext.jpg");
     opacity: 0.8; filter: alpha(opacity=20);
@@ -324,17 +248,20 @@ h6 {
     filter: brightness(1.2);
     color: rgba(20,  122,  188,  0.5);
     padding: 6px 0 12px;
-    height: 30em;
+    height: 60em;
     width:150em;
     left:-10px;
     transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);-webkit-transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);-moz-transform: rotate(358deg) scale(1) skew(0deg) translate(0px);-o-transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);-ms-transform:  rotate(358deg) scale(1) skew(0deg) translate(0px);
-    margin-bottom:-80px;
+   
     margin-left:-100px;
 }
-
+#mbio{
+    -webkit-animation: fadeInRight 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 #mcourt {
-    top:0px;
-    margin-top:20px;
+    top:25px;
     color: #fff;
     background-image: url("courttext.jpg");
     opacity: 0.8; filter: alpha(opacity=20);
@@ -344,93 +271,22 @@ h6 {
     padding: 6px 0 12px;
     height: 28em;
     width:100vw;
+    margin-bottom:-10px;
 
     margin-left:-20px;
 }
 
-#podiumgif{
-    transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);-webkit-transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);-moz-transform: rotate(2deg) scale(1) skew(0deg) translate(0px);-o-transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);-ms-transform:  rotate(2deg) scale(1) skew(0deg) translate(0px);
-}
 
-#podium{
-    position:relative;
-    height:50em;
-    left:-10em;
-    top:-5em;
-}
-
-#mpodium{
-    position:relative;
-    height:20em;
-
-    top:-3em;
-}
-#mpodiumgif{clear:both;}
-
-#block3{
-    height:5px;
-    width:150px;
-    background-color:#ff6b6b;
-    position:relative;
-    left:37.4em;
-    top:2em;
-}
-#block4{
-    height:150px;
-    width:5px;
-    background-color:#ff6b6b;
-    position:relative;
-    left:48em;
-    top:-8.7em;
-    margin-bottom:-100px;
-}
-
-#countdown{
-    right:-50px;
-    position:relative;
-    top:15em;
-    text-align:center;
-}
-
-#demo{
-    font-size:50px;
-}
-
-tr:nth-child(even) {
-    background-color: #e5e1ff;
-    color:blue;
-}
-button {
-    background-color: #e5e1ff;
-    color: black;
-    border: 2px solid #008CBA;
-    border-radius: 12px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-bottom:20px;
-    margin-top:50px;
-}
 #footer{
     background-color: black;
 
+    clear:both;
     text-align:center;
     width: 120%;
     position:relative;
     left:-10%;
     padding-top:20px;
-    margin-top:-20px;
-}
-
-#socialmedia{
-    background-color: aliceblue;
-    clear:both;
-    text-align:center;
-    width: 120%;
-    position:relative;
-    left:-10%
+ margin-top:30px;
 }
 
 
@@ -504,6 +360,14 @@ button {
     display:inline;
     margin-top:-40px;
     margin-left:50px;
+}
+
+#bios{
+    border-top:4px solid black;
+    border-left:4px solid black;
+    -webkit-animation: fadein1 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 
 
