@@ -57,6 +57,7 @@ p{
 @media screen and (min-width: 768px) {
     h1 {
         font-size:3.5em;
+        
     }
     h2{
         font-size:2.5em;
@@ -126,6 +127,9 @@ p{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
     clear:both;
+}
+#title{
+    margin-top:40px;
 }
 
 @keyframes fadeInRight {
@@ -276,7 +280,10 @@ h6 {
     margin-left:-20px;
 }
 
-
+#icon{
+    position:fixed;
+    z-index:1;
+}
 #footer{
     background-color: black;
 
